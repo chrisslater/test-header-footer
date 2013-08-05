@@ -1,0 +1,81 @@
+@import "normalize";
+
+$text-color: #fff;
+$primary-background-color: #000;
+$secondary-background-color: green;
+
+
+
+a {
+    display:block;
+    // color: $text-color;
+}
+
+
+
+
+.hide-header {
+    // .header,
+    // .footer {
+    //     opacity: 0;    
+    // }
+}
+
+.header, 
+.footer {
+
+    position: fixed;
+    width: 100%;
+}
+
+.header {
+    top:  0;
+}
+
+.footer {
+    bottom: 0;
+}
+
+.main {
+    .container {
+        margin: 40px 0;
+    }
+}
+
+.container {
+    text-align:center;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.headline {
+    color: $text-color;
+    background: $primary-background-color;
+    height: 40px;
+}
+
+.nav-container {
+    
+
+    .nav-icon {
+        position:absolute;
+        top:0;
+        left:0;
+        width: 30px;
+        height: 30px;
+        background: red;
+    }
+    nav {
+        background: $secondary-background-color;
+        position:relative;
+        left: -33%;
+        width: 33%;
+    }
+
+    &:hover {
+        nav {
+            display:block;
+            left:0;
+        }
+    }
+}
